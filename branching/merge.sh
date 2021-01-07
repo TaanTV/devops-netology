@@ -1,3 +1,4 @@
+  GNU nano 5.3                        merge.sh
 #!/bin/bash
 # display command line options
 
