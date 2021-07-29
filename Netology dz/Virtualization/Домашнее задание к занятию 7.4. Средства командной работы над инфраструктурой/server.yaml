@@ -1,0 +1,31 @@
+repos:
+- id: https://github.com/TaanTV/devops-netology/
+
+  apply_requirements: [approved, mergeable]
+
+  workflow: custom
+
+  allowed_overrides: [apply_requirements, workflow]
+
+ # allowed_workflows: [custom] # allowed_workflows Только custom можно указать или можно их п>
+                               # репозитория выбрать какой workflow мы можем использовать,
+                               # но если у нас указан флаг allow_custom_workflow
+                               # то мы можем внутри своих репозиториев задавать любые
+                               # workflow и использовать их.
+
+  allow_custom_workflows: true
+
+workflows:
+  custom:
+    plan:
+      steps:
+      - run: my-custom-command arg1 arg2
+      - init
+      - plan:
+# плохая практика но для примера показно не блокировать стейты на время планирования
+          extra_args: ["-lock", "false"]
+      - run: my-custom-command arg1 arg2
+    apply:
+      steps:
+      - run: echo hi
+      - apply
