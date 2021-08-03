@@ -46,9 +46,12 @@ resource "aws_instance" "netology" {
 }
 
 resource "aws_instance" "for_each" {
+  for_each = toset( ["Netology1", "netology2", "netology3", "netology4"] )
+  lifecycle {
+ create_before_destroy = true
+ prevent_destroy = true
+ ignore_changes = [tags]
+ }
   ami           = data.aws_ami.ubuntu.id
   instance_type = "local.netology_instance_type_map"
-  lifecycle {
-    create_before_destroy = true
-  }
 }
