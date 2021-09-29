@@ -135,6 +135,40 @@ dmitry@dmitry-VirtualBox:~/TICK$ curl -v http://localhost:9092/kapacitor/v1/ping
 Для выполнения задания приведите скриншот с отображением метрик утилизации места на диске (disk->host->telegraf_container_id) из веб-интерфейса.
 
 Ответ:
+[4 Задание ответ](https://github.com/TaanTV/devops-netology/blob/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.02.%20Monitoring%20systems/zadanie%204%20.jpg "Необязательная подсказка")
 
+Disk должен быть в этой графе по алфавиту - его перенесли, найти метрику не получилось самостоятельно.
+
+### 5. 
+
+Изучите список telegraf inputs. Добавьте в конфигурацию telegraf следующий плагин - docker:
+
+````
+[[inputs.docker]]
+  endpoint = "unix:///var/run/docker.sock"
+````
+
+Дополнительно вам может потребоваться донастройка контейнера telegraf в docker-compose.yml дополнительного volume и режима privileged:
+
+````
+ telegraf:
+    image: telegraf:1.4.0
+    privileged: true
+    volumes:
+      - ./etc/telegraf.conf:/etc/telegraf/telegraf.conf:Z
+      - /var/run/docker.sock:/var/run/docker.sock:Z
+    links:
+      - influxdb
+    ports:
+      - "8092:8092/udp"
+      - "8094:8094"
+      - "8125:8125/udp"
+````
+После настройке перезапустите telegraf, обновите веб интерфейс и приведите скриншотом список measurments в веб-интерфейсе базы telegraf.autogen . Там должны появиться метрики, связанные с docker.
+
+Факультативно можете изучить какие метрики собирает telegraf после выполнения данного задания.
+
+Ответ: 
+[5 Задание ответ](https://github.com/TaanTV/devops-netology/blob/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.02.%20Monitoring%20systems/zadanie%205.jpg "Необязательная подсказка")
 
 
