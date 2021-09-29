@@ -33,9 +33,9 @@ TICK push
 
 Zabbix  push/pull
 
-VictoriaMetrics
+VictoriaMetrics pull/push
 
-Nagios
+Nagios push
 
 ### 3. Склонируйте себе репозиторий и запустите TICK-стэк, используя технологии docker и docker-compose.
 
