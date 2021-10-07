@@ -1,12 +1,12 @@
 ставим prometheus по этим гайдам: 
 
+https://github.com/Einsteinish/Docker-Compose-Prometheus-and-Grafana офф 
 
-https://github.com/Einsteinish/Docker-Compose-Prometheus-and-Grafana
+https://blog.unixhost.pro/2021/02/ustanovka-prometheus-grafana/ не офф
 
-https://eax.me/prometheus-and-grafana/
 
-[пример](http://example.com/ "Необязательная подсказка")
-
+для себя скрин поднятых контейнеров
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg)
 
 # Домашнее задание к занятию "10.03. Grafana"
 
@@ -41,7 +41,7 @@ https://eax.me/prometheus-and-grafana/
 
 ## Задание 2
 Изучите самостоятельно ресурсы:
-- [promql-for-humans](https://timber.io/blog/promql-for-humans/#cpu-usage-by-instance)
+- [https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg)
 - [understanding prometheus cpu metrics](https://www.robustperception.io/understanding-machine-cpu-usage)
 
 Создайте Dashboard и в ней создайте следующие Panels:
