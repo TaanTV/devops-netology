@@ -6,29 +6,10 @@ https://blog.unixhost.pro/2021/02/ustanovka-prometheus-grafana/ не офф
 
 
 для себя скрин поднятых контейнеров
-![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg)
 
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg)
 # Домашнее задание к занятию "10.03. Grafana"
 
-## Задание повышенной сложности
-
-**В части задания 1** не используйте директорию [help](./help) для сборки проекта, самостоятельно разверните grafana, где в 
-роли источника данных будет выступать prometheus, а сборщиком данных node-exporter:
-- grafana
-- prometheus-server
-- prometheus node-exporter
-
-За дополнительными материалами, вы можете обратиться в официальную документацию grafana и prometheus.
-
-В решении к домашнему заданию приведите также все конфигурации/скрипты/манифесты, которые вы 
-использовали в процессе решения задания.
-
-**В части задания 3** вы должны самостоятельно завести удобный для вас канал нотификации, например Telegram или Email
-и отправить туда тестовые события.
-
-В решении приведите скриншоты тестовых событий из каналов нотификаций.
-
-## Обязательные задания
 
 ### Задание 1
 Используя директорию [help](./help) внутри данного домашнего задания - запустите связку prometheus-grafana.
@@ -39,9 +20,11 @@ https://blog.unixhost.pro/2021/02/ustanovka-prometheus-grafana/ не офф
 
 Решение домашнего задания - скриншот веб-интерфейса grafana со списком подключенных Datasource.
 
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/data%20source.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/data%20source.jpg)
+
 ## Задание 2
 Изучите самостоятельно ресурсы:
-- [https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC%20%D0%B2%20%D1%80%D1%83%D1%87%D0%BD%D1%83%D1%8E.jpg)
+- [promql-for-humans](https://timber.io/blog/promql-for-humans/#cpu-usage-by-instance)
 - [understanding prometheus cpu metrics](https://www.robustperception.io/understanding-machine-cpu-usage)
 
 Создайте Dashboard и в ней создайте следующие Panels:
@@ -57,7 +40,7 @@ https://blog.unixhost.pro/2021/02/ustanovka-prometheus-grafana/ не офф
 ### 1) Утилизация CPU для nodeexporter (в процентах, 100-idle)
 avg(rate(node_cpu_seconds_total {mode = "idle"}[15s])) * 100
 
- [пример](http://example.com/ "Необязательная подсказка")
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D0%A3%D1%82%D0%B8%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D1%86%D0%BF%D1%83%20100-idle.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D0%A3%D1%82%D0%B8%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D1%86%D0%BF%D1%83%20100-idle.jpg)
 
 ### 2) CPULA 1/5/15
 
@@ -71,19 +54,19 @@ avg(rate(node_cpu_seconds_total {mode = "idle"}[15s])) * 100
 
 sum (irate(node_cpu_seconds_total[5m])) without (mode) # средняя загрузка процессора
 
-[пример](http://example.com/ "Необязательная подсказка")
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/CPULA%201-5%20-15.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/CPULA%201-5%20-15.jpg)
 ### 3) Количество свободной оперативной памяти
 
 node_memory_MemFree_bytes / node_memory_MemTotal_bytes * 100
 
- [пример](http://example.com/ "Необязательная подсказка")
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8.jpg)
 ### 4) Количество места на файловой системе
 
 node_filesystem_avail_bytes / node_filesystem_size_bytes * 100  # свободное место в процентах
 
 100 - node_filesystem_avail_bytes{fstype!='tmpfs'} / node_filesystem_size_bytes * 100 # занятое место в процентах
 
- [пример](http://example.com/ "Необязательная подсказка")
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B8%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%BE%D0%B5%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%20%D0%B2%20%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/CI%2C%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%20%D0%B8%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/Homework%20for%20the%20lesson%2010.03.%20Grafana/%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B8%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%BE%D0%B5%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%20%D0%B2%20%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5.jpg)
 
 
 
