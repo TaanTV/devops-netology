@@ -251,11 +251,12 @@ kibana 7.15.1 как указано в groups_vars
         dest: /etc/profile.d/kibana.sh
       tags: kibana
     - name: Recursively take ownership of a directory
-      become: yes      
+      become: yes
       file:
         path: "{{ kibana_home }}"
         state: directory
         recurse: yes
+        owner: "{{ ansible_user }}"
 ````
 
 см. скрин “kibana playbook.jpg”
@@ -371,7 +372,7 @@ kibana 7.15.1 как указано в groups_vars
         dest: /etc/profile.d/kibana.sh
       tags: kibana
     - name: Recursively take ownership of a directory
-      become: yes      
+      become: yes
       file:
         path: "{{ kibana_home }}"
         state: directory
