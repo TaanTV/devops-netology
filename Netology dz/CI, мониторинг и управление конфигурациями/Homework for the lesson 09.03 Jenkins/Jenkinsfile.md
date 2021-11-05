@@ -1,3 +1,4 @@
+````
 pipeline {
     agent {
         label "ansible_docker"
@@ -15,3 +16,4 @@ pipeline {
         }
     }
 }
+````

@@ -1,3 +1,4 @@
+````
 node("ansible_docker"){
     stage("Git checkout"){
         git credentialsId: '11e80cd8-d7a2-4de1-90f7-3acc15b11eb2', url: 'https://github.com/TaanTV/example-playbook.git'
@@ -13,3 +14,4 @@ node("ansible_docker"){
         sh 'ansible-playbook site.yml -i inventory/prod.yml'
     }
 }
+```
