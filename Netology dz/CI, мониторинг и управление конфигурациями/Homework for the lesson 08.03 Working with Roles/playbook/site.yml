@@ -1,0 +1,6 @@
+# ansible-playbook -i inventory/prod.yml --ask-pass --ask-become-pass site.yml
+- hosts: all
+  roles:
+#    - java
+    - elastic-role
+    - kibana-role
