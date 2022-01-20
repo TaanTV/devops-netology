@@ -27,7 +27,7 @@
 Nginx
 Клиентское приложение отправляет HTTP- GET запрос в / api / inventory / inventory .
 
-# NGINX вставить
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2011.02%20Microservices%20principles/nginx%20gateway%20Homework%20for%20the%20lesson%2011.02%20Microservices%20principles%20.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2011.02%20Microservices%20principles/nginx%20gateway%20Homework%20for%20the%20lesson%2011.02%20Microservices%20principles%20.jpg)
 
 Одним из преимуществ использования NGINX в качестве шлюза API является то, что он может выполнять эту роль, одновременно выступая в качестве обратного прокси, балансировщика нагрузки и веб-сервера для существующего HTTP-трафика. Если NGINX уже является частью стека доставки вашего приложения, обычно нет необходимости в развертывании отдельного шлюза API.
 
@@ -47,6 +47,8 @@ Amazon API Gateway —
 
 Здесь приведена архитектура для типичного SaaS-провайдера, который предлагает свои услуги другим организациям и должен поддерживать “white-label”-домены для веб- и API — инфраструктуры.
 
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2011.02%20Microservices%20principles/Amazon%20gateway%20Homework%20for%20the%20lesson%2011.02%20Microservices%20principles%20.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2011.02%20Microservices%20principles/Amazon%20gateway%20Homework%20for%20the%20lesson%2011.02%20Microservices%20principles%20.jpg)
+
 ### Google API Gateway
 
 Ниже представлена высокоуровневая диаграмма основных компонентов, задействованных в API Gateway
@@ -60,7 +62,7 @@ Amazon API Gateway —
 Клиент API только должен знать URL в API, запрос глаголом (например GET, PUT, POST, DELETE), любые требования аутентификации и формат любых данных , отправленных или полученных от API.
 Клиенту API не нужно ничего знать о внутренней реализации. Фактически, один API, размещенный на API Gateway, может быть настроен для доступа к различным серверным модулям на основе информации, переданной в запросе.
 
-## google
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2011.02%20Microservices%20principles/google%20gateway%20Homework%20for%20the%20lesson%2011.02%20Microservices%20principles%20%20%E2%80%94%20.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2011.02%20Microservices%20principles/google%20gateway%20Homework%20for%20the%20lesson%2011.02%20Microservices%20principles%20%20%E2%80%94%20.jpg)
 
 
 
