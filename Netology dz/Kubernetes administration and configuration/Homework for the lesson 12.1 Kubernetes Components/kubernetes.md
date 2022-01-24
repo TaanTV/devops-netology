@@ -50,7 +50,7 @@ dmitry@dmitry-VirtualBox:~$ minikube start
 🌟  Enabled addons: default-storageclass, storage-provisioner, dashboard
 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
 ````
-
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.1%20Kubernetes%20Components/%D0%92%D1%8B%D0%B4%D0%B5%D0%BB%D0%B8%D0%BB%D0%B8%20%D0%A6%D0%9F%D0%A3%20%D0%B8%20%D0%B2%D1%81%D0%B5%20%D0%B2%D0%B7%D0%BB%D0%B5%D1%82%D0%B5%D0%BB%D0%BE.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.1%20Kubernetes%20Components/%D0%92%D1%8B%D0%B4%D0%B5%D0%BB%D0%B8%D0%BB%D0%B8%20%D0%A6%D0%9F%D0%A3%20%D0%B8%20%D0%B2%D1%81%D0%B5%20%D0%B2%D0%B7%D0%BB%D0%B5%D1%82%D0%B5%D0%BB%D0%BE.jpg)
 
 ## Задача 2: Запуск Hello World
 После установки Minikube требуется его проверить. Для этого подойдет стандартное приложение hello world. А для доступа к нему потребуется ingress.
@@ -58,8 +58,67 @@ dmitry@dmitry-VirtualBox:~$ minikube start
 - развернуть через Minikube тестовое приложение по [туториалу](https://kubernetes.io/ru/docs/tutorials/hello-minikube/#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%B0-minikube)
 - установить аддоны ingress и dashboard
 
+### Ответ:
+|-----------------------------|----------|--------------|--------------------------------|
+|         ADDON NAME          | PROFILE  |    STATUS    |           MAINTAINER           |
+|-----------------------------|----------|--------------|--------------------------------|
+| ambassador                  | minikube | disabled     | third-party (ambassador)       |
+| auto-pause                  | minikube | disabled     | google                         |
+| csi-hostpath-driver         | minikube | disabled     | kubernetes                     |
+| dashboard                   | minikube | enabled ✅   | kubernetes                     |
+| default-storageclass        | minikube | enabled ✅   | kubernetes                     |
+| efk                         | minikube | disabled     | third-party (elastic)          |
+| freshpod                    | minikube | disabled     | google                         |
+| gcp-auth                    | minikube | disabled     | google                         |
+| gvisor                      | minikube | disabled     | google                         |
+| helm-tiller                 | minikube | disabled     | third-party (helm)             |
+| ingress                     | minikube | enabled ✅   | unknown (third-party)          |
+| ingress-dns                 | minikube | disabled     | google                         |
+| istio                       | minikube | disabled     | third-party (istio)            |
+| istio-provisioner           | minikube | disabled     | third-party (istio)            |
+| kubevirt                    | minikube | disabled     | third-party (kubevirt)         |
+| logviewer                   | minikube | disabled     | unknown (third-party)          |
+| metallb                     | minikube | disabled     | third-party (metallb)          |
+| metrics-server              | minikube | disabled     | kubernetes                     |
+| nvidia-driver-installer     | minikube | disabled     | google                         |
+| nvidia-gpu-device-plugin    | minikube | disabled     | third-party (nvidia)           |
+| olm                         | minikube | disabled     | third-party (operator          |
+|                             |          |              | framework)                     |
+| pod-security-policy         | minikube | disabled     | unknown (third-party)          |
+| portainer                   | minikube | disabled     | portainer.io                   |
+| registry                    | minikube | disabled     | google                         |
+| registry-aliases            | minikube | disabled     | unknown (third-party)          |
+| registry-creds              | minikube | disabled     | third-party (upmc enterprises) |
+| storage-provisioner         | minikube | enabled ✅   | google                         |
+| storage-provisioner-gluster | minikube | disabled     | unknown (third-party)          |
+| volumesnapshots             | minikube | disabled     | kubernetes                     |
+|-----------------------------|----------|--------------|--------------------------------|
+
+minikube service hello-node
+|-----------|------------|-------------|---------------------------|
+| NAMESPACE |    NAME    | TARGET PORT |            URL            |
+|-----------|------------|-------------|---------------------------|
+| default   | hello-node |        8080 | http://192.168.49.2:31046 |
+|-----------|------------|-------------|---------------------------|
+🎉  Opening service default/hello-node in default browser...
+
+ответ в браузере
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.1%20Kubernetes%20Components/hello.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.1%20Kubernetes%20Components/hello.jpg)
+
 ## Задача 3: Установить kubectl
 
 Подготовить рабочую машину для управления корпоративным кластером. Установить клиентское приложение kubectl.
 - подключиться к minikube 
 - проверить работу приложения из задания 2, запустив port-forward до кластера
+Ответ:
+  
+
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.1%20Kubernetes%20Components/kubectl%20cluster-info.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.1%20Kubernetes%20Components/kubectl%20cluster-info.jpg)
+
+````
+dmitry@dmitry-VirtualBox:~$ kubectl cluster-info
+Kubernetes control plane is running at https://192.168.49.2:8443
+CoreDNS is running at https://192.168.49.2:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+````
