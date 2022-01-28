@@ -139,12 +139,16 @@ dmitry@dmitry-VirtualBox:~$ kubectl config set-context minikube --user minikube 
 
 dmitry@dmitry-VirtualBox:~$ kubectl scale --replicas=5 deployment/hello-node # увеличить количество реплик до 5, как в 1 задании.
 deployment.apps/hello-node scaled
+
 dmitry@dmitry-VirtualBox:~$ kubectl get po
+
+
 ````
+dmitry@dmitry-VirtualBox:~$ kubectl get po
 NAME                          READY   STATUS    RESTARTS   AGE
-hello-node-6b89d599b9-7wfns   1/1     Running   0          13s
-hello-node-6b89d599b9-d42b2   1/1     Running   0          55m
-hello-node-6b89d599b9-jkm4f   1/1     Running   0          13s
-hello-node-6b89d599b9-kgx75   1/1     Running   0          51m
-hello-node-6b89d599b9-sxkkz   1/1     Running   0          13s
+hello-node-6b89d599b9-7wfns   1/1     Running   0          66m
+hello-node-6b89d599b9-d42b2   1/1     Running   0          121m
+hello-node-6b89d599b9-jkm4f   1/1     Running   0          66m
+hello-node-6b89d599b9-kgx75   1/1     Running   0          116m
+hello-node-6b89d599b9-sxkkz   1/1     Running   0          66m
 ````
