@@ -26,6 +26,15 @@ sudo pip3 install -r requirements.txt # sudo pip3 install -r requirements.txt # 
 
 cp -rfp inventory/sample inventory/mycluster # Копирование примера в папку с вашей конфигурацией
 
+### заполяем инвентори:
+
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.4%20Deploying%20a%20cluster%20on%20your%20own%20servers%2C%20lesson%202/inventory.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.4%20Deploying%20a%20cluster%20on%20your%20own%20servers%2C%20lesson%202/inventory.jpg)
+
 ansible-playbook -i kubespray/inventory/mycluster/inventory.ini kubespray/cluster.yml --ask-pass -b --ask-become-pass # заускаем playbook
 
-![]
+Вывод:
+
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.4%20Deploying%20a%20cluster%20on%20your%20own%20servers%2C%20lesson%202/playbook2.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.4%20Deploying%20a%20cluster%20on%20your%20own%20servers%2C%20lesson%202/playbook2.jpg)
+
+
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.4%20Deploying%20a%20cluster%20on%20your%20own%20servers%2C%20lesson%202/kubectl%20et%20nodes.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.4%20Deploying%20a%20cluster%20on%20your%20own%20servers%2C%20lesson%202/kubectl%20et%20nodes.jpg)
