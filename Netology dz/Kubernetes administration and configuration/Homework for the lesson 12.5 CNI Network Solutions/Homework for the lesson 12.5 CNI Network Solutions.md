@@ -26,7 +26,7 @@ NAME         TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
 hello-node   LoadBalancer   10.96.198.84   <pending>     8080:32760/TCP   140m
 kubernetes   ClusterIP      10.96.0.1      <none>        443/TCP          23h
 ````
-![]()
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.5%20CNI%20Network%20Solutions/hello%20world.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.5%20CNI%20Network%20Solutions/hello%20world.jpg)
 
 ## Задание 2: изучить, что запущено по умолчанию
 Самый простой способ — проверить командой calicoctl get <type>. Для проверки стоит получить список нод, ipPool и profile.
@@ -119,3 +119,5 @@ ksa.tigera-operator.default
 ksa.tigera-operator.tigera-operator                  
 ````
 
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.5%20CNI%20Network%20Solutions/calico.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.5%20CNI%20Network%20Solutions/calico.jpg)
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.5%20CNI%20Network%20Solutions/calico%202.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20administration%20and%20configuration/Homework%20for%20the%20lesson%2012.5%20CNI%20Network%20Solutions/calico%202.jpg)
