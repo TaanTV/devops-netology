@@ -71,7 +71,7 @@ last@last-VirtualBox:~/14.1$ kubectl create secret tls domain-cert --cert=cert.c
 secret/domain-cert created
 
 ````
-
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/How%20to%20create%20a%20secret%2014.1%20Creating%20and%20using%20secrets%20.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/How%20to%20create%20a%20secret%2014.1%20Creating%20and%20using%20secrets%20.jpg)
 Как просмотреть список секретов?
 ````
 last@last-VirtualBox:~/14.1$ kubectl get secrets
@@ -88,7 +88,7 @@ default-token-pwmrq   kubernetes.io/service-account-token   3      19m
 domain-cert           kubernetes.io/tls                     2      4m18s
 
 ````
-
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/How%20to%20view%20the%20list%20of%20secrets%2014.1%20Creating%20and%20using%20secrets%20.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/How%20to%20view%20the%20list%20of%20secrets%2014.1%20Creating%20and%20using%20secrets%20.jpg)
 Как просмотреть секрет?
 ````
 ast@last-VirtualBox:~/14.1$ kubectl get secret domain-cert
@@ -111,6 +111,7 @@ tls.key:  3243 bytes
 
 Как получить информацию в формате YAML и/или JSON?
 
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/How%20to%20view%20the%20list%20of%20secrets%2014.1%20Creating%20and%20using%20secrets%20.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/How%20to%20view%20the%20list%20of%20secrets%2014.1%20Creating%20and%20using%20secrets%20.jpg)
 
 в yaml
 ````
@@ -163,7 +164,7 @@ last@last-VirtualBox:~/14.1$ kubectl get secret domain-cert -o yaml > domain-cer
 last@last-VirtualBox:~/14.1$ ls
 cert.crt  cert.key  domain-cert.yml  secrets.json
 ````
-
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/%D0%9A%D0%B0%D0%BA%20%D0%B2%D1%8B%D0%B3%D1%80%D1%83%D0%B7%D0%B8%D1%82%D1%8C%20%D1%81%D0%B5%D0%BA%D1%80%D0%B5%D1%82%20%D0%B8%20%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B5%D0%B3%D0%BE%20%D0%B2%20%D1%84%D0%B0%D0%B9%D0%BB.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/%D0%9A%D0%B0%D0%BA%20%D0%B2%D1%8B%D0%B3%D1%80%D1%83%D0%B7%D0%B8%D1%82%D1%8C%20%D1%81%D0%B5%D0%BA%D1%80%D0%B5%D1%82%20%D0%B8%20%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B5%D0%B3%D0%BE%20%D0%B2%20%D1%84%D0%B0%D0%B9%D0%BB.jpg)
 Как удалить секрет?
 ````
 last@last-VirtualBox:~/14.1$ kubectl delete secret domain-cert
@@ -175,7 +176,7 @@ secret "domain-cert" deleted
 last@last-VirtualBox:~/14.1$ kubectl apply -f domain-cert.yml
 secret/domain-cert created
 ````
-
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/finally%20upload%20the%20secret%20to%20JSON.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/Kubernetes%20and%20cloud%20services/14.1%20Creating%20and%20using%20secrets/finally%20upload%20the%20secret%20to%20JSON.jpg)
 
 
 
