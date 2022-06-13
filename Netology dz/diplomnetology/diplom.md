@@ -3,7 +3,7 @@
 last@last-VirtualBox:~/yandex-cli$ yc config list
 ````
 
-# смотрим наш конфиг лист
+# экспортируем наш токен
 ````
 last@last-VirtualBox:~/yandex-cli$ export YC_TOKEN=77XXXXXXXX
 ````
@@ -44,7 +44,7 @@ last@last-VirtualBox:~/yandex-cli$ terraform workspace list
 * stage
 ````
 
-### [main]()
+### [main](https://github.com/TaanTV/devops-netology/blob/main/Netology%20dz/diplomnetology/main.tf)
 main 
 ````
 terraform {
@@ -854,17 +854,19 @@ statefulset.apps/prometheus-stable-kube-prometheus-sta-prometheus       1/1     
 
 [доступ к образу nginx](http://51.250.65.198:32000/)
 
-screenshot
-![]()
+### рабочее приложение
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/nginx%20up.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/nginx%20up.jpg)
+
 
 ### gitlab repo
 [https://gitlab.com/devopstaan/diplomnetology/-/tree/main](https://gitlab.com/devopstaan/diplomnetology/-/tree/main)
 
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/gitlab%20pipelines.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/gitlab%20pipelines.jpg)
 ### dockerhub образ нашего nginx
 
 [https://hub.docker.com/repository/docker/dmitrykraska/diplomnetology](https://hub.docker.com/repository/docker/dmitrykraska/diplomnetology)
 
-
+![]
 
 
 *==================*
