@@ -1,3 +1,5 @@
+Дипломное задание: https://github.com/TaanTV/devops-diplom-yandexcloud
+
 # смотрим наш конфиг лист
 ````
 last@last-VirtualBox:~/yandex-cli$ yc config list
