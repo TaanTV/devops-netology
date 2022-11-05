@@ -879,3 +879,8 @@ screenshot
 ### установка Prometheus через helm
 
 [https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack)
+
+#Преподаватель
+#Денис Альмухаметов
+#Все отлично! Поздравляю с успешным окончанием.
+#Желаю успехов в дальнейшей карьере.
