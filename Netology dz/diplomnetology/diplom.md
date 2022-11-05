@@ -865,8 +865,15 @@ statefulset.apps/prometheus-stable-kube-prometheus-sta-prometheus       1/1     
 ### dockerhub образ нашего nginx
 
 [https://hub.docker.com/repository/docker/dmitrykraska/diplomnetology](https://hub.docker.com/repository/docker/dmitrykraska/diplomnetology)
+### YC
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/yandex%20cloud%20all.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/yandex%20cloud%20all.jpg)
 
-![]
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/yandex%20cloud%20VM.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/yandex%20cloud%20VM.jpg)
+
+### Dashboard grafana
+![https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/dashboard.jpg](https://raw.githubusercontent.com/TaanTV/devops-netology/main/Netology%20dz/diplomnetology/dashboard.jpg)
+
+[gitlab репо](https://gitlab.com/devopstaan/diplomnetology)
 
 
 *==================*
